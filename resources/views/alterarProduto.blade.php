@@ -17,13 +17,13 @@
                         @method('PUT')
                         {{csrf_field()}}
                         <div class="form-group">
-                            Produto:<input type="text" name="produto" class="form-control">
+                            Produto:<input type="text" name="produto" value="{{$product->produto}}" class="form-control">
                         </div>
                         <div class="form-group">
-                            Quantidade:<input type="number" name="quantidade" class="form-control">
+                            Quantidade:<input type="number" name="quantidade" value="{{$product->quantidade}}" class="form-control">
                         </div>
                         <div class="form-group">
-                            Cor:<input type="text" name="cor" class="form-control">
+                            Cor:<input type="text" name="cor" value="{{$product->cor}}" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-warning">Salvar</button>
                     </form>
